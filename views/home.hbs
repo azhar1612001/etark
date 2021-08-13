@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        .main-div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .mid-div{
+            background: rgba(3,169,244, 0.3);
+            padding: 20px;
+            display: flex;
+            border-radius: 10px;
+        }
+        .inner-div{
+            padding: 10px;
+            margin: 10px;
+        }
+        a{
+            padding: 10px;
+            font-weight: 900;
+            color: white;
+            background-color: black;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        a:hover{
+            cursor: pointer;
+            color: #000;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <p style="background: green;color: #fff;">{{success}}</p>
+        <div class="mid-div">
+            <div class="inner-div">
+                <a href="/login">Login</a>
+            </div>
+            <div class="inner-div">
+                <a href="/signup">SignUp</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

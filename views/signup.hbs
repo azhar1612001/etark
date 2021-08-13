@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        .main-div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .inner-div{
+            padding: 10px;
+        }
+        input{
+            padding: 5px;
+            border: 2px solid;
+            border-radius: 5px;
+        }
+        button{
+            padding: 10px;
+            border: none;
+            background: #000;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 900;
+            cursor: pointer;
+        }
+        button:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <form action="/signup" method="post">
+            <p style="background: red;color: #fff;">{{error}}</p>
+            <div class="inner-div">
+                <h2>Signup</h2>
+            </div>
+            <div class="inner-div">
+                <label for="name">Name: </label><br>
+                <input type="name" id="name" name="name" placeholder="Enter Name">
+            </div>
+            <div class="inner-div">
+                <label for="email">Email: </label><br>
+                <input type="email" id="email" name="email" placeholder="Enter Email">
+            </div>
+            <div class="inner-div">
+                <label for="password">Password: </label><br>
+                <input type="password" id="password" name="password" placeholder="Enter Password">
+            </div>
+            <div class="inner-div">
+                <label for="cpassword">Confirm Password: </label><br>
+                <input type="password" id="cpassword" name="cpassword" placeholder="Enter Confirm Password">
+            </div>
+            <div class="inner-div">
+                <button type="submit">Signup</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

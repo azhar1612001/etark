@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <style>
+        .main-div{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 900;
+        }
+        a:hover{
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-div">
+        <p style="background: red;color: #fff;">{{error}}</p>
+        <p style="background: green;color: #fff;">{{success}}</p>
+        <div class="mid-div">
+            <div class="inner-div">
+                <h1>Welcome User</h1>
+            </div>
+            <div class="inner-div">
+                <h5>Name: <span>{{name}}</span></h5>
+                <h5>Email: <span>{{email}}</span></h5>
+            </div>
+            <div class="inner-div">
+                <a href="/logout">Logout</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
