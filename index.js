@@ -54,9 +54,6 @@ const authenticate = async (req,res,next) => {
     }
 }
 
-app.get("/",(req,res) => {
-    res.send("hellow from server");
-})
 
 app.get("/home",authenticate,(req,res) => {
     res.render("home");
